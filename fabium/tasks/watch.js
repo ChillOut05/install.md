@@ -1,6 +1,7 @@
 var globals = require('../globals.js')
 
 var paths = {
+	fonts: globals.getPath( globals.config.paths.src.fonts.all ),
 	styles: globals.getPath( globals.config.paths.src.styles.all ),
 	images: globals.getPath( globals.config.paths.src.images.all ),
 	templates: globals.getPath( globals.config.paths.src.templates.all )
@@ -10,6 +11,7 @@ function watch() {
 
 	global.isWatching = true;
 
+	globals.gulp.watch( paths.fonts, globals.gulp.series('fonts') );
 	globals.gulp.watch( paths.styles, globals.gulp.series('styles') );
 	globals.gulp.watch( paths.images, globals.gulp.series('images') );
 	globals.gulp.watch( paths.templates, globals.gulp.series('templates') );
