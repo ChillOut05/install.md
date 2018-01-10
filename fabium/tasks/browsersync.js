@@ -23,7 +23,7 @@ function bSync(cb) {
 			baseDir: globals.getPath( globals.config.paths.dist.path )
 		},
 		port: PORT || 3000,
-		tunnel: true
+		tunnel: false
 	}, cb);
 
 }
