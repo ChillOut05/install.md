@@ -1,0 +1,64 @@
+.gallery
+	&
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		position: relative
+		margin: -210px 0 100px
+		z-index: 2
+
+	&__info
+		margin-top: -170px
+		margin-right: 70px
+
+	&__heading
+		margin-bottom: 60px
+		font-size: 24px
+		color: #fff
+
+	&__caption-list
+		width: 170px
+		margin-bottom: 20px
+
+	&__caption
+		font-size: 18px
+		outline: 0
+
+	&__slide-count
+		font-size: 18px
+		opacity: .4
+
+	&__slider
+		position: relative
+		width: 1065px
+
+	&__slide
+		outline: 0
+
+	&__controls
+		display: flex
+		position: absolute
+		bottom: 0
+		left: -90px
+
+	&__slider-next svg, &__slider-prev svg
+		width: 18px
+		height: 12px
+
+	&__slider-next, &__slider-prev
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 90px
+		height: 90px
+
+		&:hover
+			cursor: pointer
+
+	&__slider-prev
+		background: #fff
+
+	&__slider-next
+		background: $secondary-color
