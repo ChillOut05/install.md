@@ -1,0 +1,59 @@
+@media (--mobile)
+	.gallery
+		&
+			flex-direction: column
+			margin: 0 0 10.75vw
+
+		&__heading_mobile
+			margin: -16vw auto 7vw
+			font-size: 5.7vw
+
+		&__info
+			margin: 0
+			order: 2
+
+		&__slider
+			width: 100%
+			height: 93.75vw
+			order: 1
+			margin-bottom: 5.6vw
+
+		&__slider-wrap
+			height: 100%
+
+		&__controls
+			position: static
+
+		&__slider-prev, &__slider-next
+			position: absolute
+			width: 21.8vw
+			height: 16.8vw
+			background: none
+
+		&__slider-prev svg, &__slider-next svg
+			width: 5.6vw
+			height: 3.75vw
+			fill: #fff
+			fill-opacity: 1
+			opacity: 1
+
+		&__slider-prev
+			left: 0
+			bottom: 0
+
+		&__slider-next
+			right: 0
+			bottom: 0
+
+		&__caption-list
+			width: 54vw
+			margin-bottom: 4.4vw
+			text-align: center
+
+		&__caption
+			font-size: 4.4vw
+			line-height: 5.7vw
+
+		&__slide-count
+			font-size: 4.4vw
+			text-align: center

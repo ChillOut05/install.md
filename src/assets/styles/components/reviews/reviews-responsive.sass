@@ -1,0 +1,45 @@
+@media (--mobile)
+	.reviews
+		&
+			flex-direction: column
+			margin-left: 0
+			margin-bottom: 14vw
+
+		&__comment-wrap
+			width: 87.5vw
+			margin-right: 0
+			margin-bottom: 18.75vw
+
+			&::before
+				top: 14vw
+				left: 7.8vw
+				width: 6vw
+				height: 6vw
+
+			&::after
+				width: 10.5vw
+				height: 10.5vw
+				top: initial
+				left: 0
+				bottom: -10.5vw
+				right: initial
+				transform: rotateY(180deg)
+
+		&__comment
+			padding: 13.5vw 11.8vw 8vw 21.9vw
+			font-size: 4.4vw
+
+		&__reviewer
+			display: flex !important
+			align-items: center
+			justify-content: center
+			width: 87.5vw
+
+		&__next
+			width: 5.6vw
+			height: 9.75vw
+			align-items: flex-start
+
+		&__next svg
+			width: 5.6vw
+			height: 3.75vw
