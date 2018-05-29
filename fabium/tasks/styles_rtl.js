@@ -9,12 +9,12 @@ var src = [
 var dest = globals.getPath( globals.config.paths.dist.styles.path )
 
 function stylesRTL() {
-	return globals.gulp.src( src )
+	return globals.gulp.src( [globals.config.paths.dist.styles.all, '!' + globals.config.paths.dist.styles.rtl.all, '!' + globals.config.paths.dist.styles.minified.all] )
 		.pipe( globals.$.rtlcss() )
 		.pipe( globals.$.rename({
 			suffix: '-rtl'
 		}) )
-		.pipe( globals.gulp.dest( dest ) )
+		.pipe( globals.gulp.dest( globals.config.paths.dist.styles.path ) )
 
 };
 

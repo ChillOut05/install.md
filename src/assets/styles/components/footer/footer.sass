@@ -3,7 +3,7 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
-		padding: 3.8vw 9vw
+		padding: 2.8vw 9vw
 		background-color: $main-color
 
 	&__contacts
@@ -19,8 +19,16 @@
 		display: flex
 		color: #fff
 
+		&:hover > p, &:hover > .footer__email-icon svg, &:hover > .footer__phone-icon svg
+			color: darken($main-color, 20%)
+			fill: darken($main-color, 20%)
+			transition: 0.2s
+
 	&__email
 		margin-right: 4.9vw
+	
+	&__phone
+		margin-right: 1vw
 
 	&__email-icon
 		width: 1.4vw
@@ -33,7 +41,16 @@
 		height: 1.25vw
 		margin-top: 0.1vw
 		margin-right: 1vw
+	
+	&__viber, &__telegram
+		color: #ffffff
+		opacity: 0.6
 
-	&__experience
+		&:hover
+			color: darken($main-color, 20%)
+			opacity: 1
+			transition: 0.2s
+
+	&__copyright
 		font-size: 1.25vw
-		opacity: .4
+		color: #fff

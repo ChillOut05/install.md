@@ -3,8 +3,15 @@
 		display: flex
 
 	&__call
-		padding: 1.4vw 0.5vw 0 2.1vw
+		display: flex
+		align-items: center
+		padding-left: 2.1vw
 		background-color: $main-color
+
+		&:hover
+			background-color: darken($main-color, 10%)
+			transition: 0.2s
+			cursor: pointer
 
 	&__text
 		font-size: 1.25vw
@@ -28,8 +35,7 @@
 			align-items: center
 			justify-content: center
 			width: 6.25vw
-			height: 6.25vw
-			background-color: $main-color
+			height: 6.25vw		
 
 		&
 			svg
@@ -44,6 +50,10 @@
 			width: 6.25vw
 			height: 6.25vw
 			background-color: rgba($main-color, .5)
+
+			&:hover
+				background-color: darken($main-color, 10%)
+				transition: 0.2s
 
 		&
 			svg

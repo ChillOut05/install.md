@@ -27,3 +27,7 @@ gulp.task('deploy',
 gulp.task('validate',
 	gulp.series('w3c:html')
 );
+
+gulp.task('bootstrap',
+	gulp.series('bootstrap')
+);

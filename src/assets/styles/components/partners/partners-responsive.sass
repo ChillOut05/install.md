@@ -1,44 +1,36 @@
 @media (--mobile)
 	.partners
 		&
-			padding: 8.1vw 0 9.5vw 9.4vw
+			width: 82.5vw
+			margin: 0 auto
 
 		&__heading
-			margin-bottom: 5.3vw
+			margin-bottom: 5vw
 
 		&__subheading
-			width: 62.5vw
+			width: 100%
 			margin-bottom: 9.4vw
-			font-size: 4.4vw
+			font-size: 4.3vw
 
 		&__logos-list
-			width: 62.5vw
-			margin-bottom: 7vw
+			width: 100%
+			margin-bottom: 10vw
+			flex-wrap: wrap
 
 		&__logo
-			margin-right: 6.25vw
+			margin-bottom: 10vw
 
 			&:last-child
-				margin-right: 0
+				margin-bottom: 0
+		
+		&__logo img
+			width: 75%
 
 		&__text
-			width: 55.6vw
-			margin-right: 0
-			font-size: 4.4vw
+			width: 100%
+			font-size: 4.3vw
 
-		&__phone
-			display: flex
-			align-items: center
-			justify-content: center
-			width: 21.6vw
-			height: 21.8vw
-			margin-right: 0
-
-			& svg
-				width: 5.6vw
-				height: 5.6vw
-				fill: $main-color
-
-
-		&__mail
-			display: none
+@media (--desktop-large)
+	.partners
+		&__logo img
+			width: 150%

@@ -11,6 +11,11 @@
 				"mixins": "src/assets/styles/mixins/index.sass",
 				"path": "src/assets/styles"
 			},
+			"bootstrap": {
+				"all": "src/assets/styles/bootstrap/**/*.sass",
+				"main": "src/assets/styles/bootstrap/bootstrap-grid.scss",
+				"path": "src/assets/styles/bootstrap"
+			},
 			"scripts": {
 				"all": "src/assets/scripts/**/*.js"
 			},
@@ -48,6 +53,16 @@
 				},
 				"rtl": {
 					"all": "public/assets/styles/**/*-rtl.css"
+				}
+			},
+			"bootstrap": {
+				"all": "public/assets/styles/bootstrap/**/*.css",
+				"path": "public/assets/styles",
+				"minified": {
+					"all": "public/assets/styles/bootstrap/**/*.min.css"
+				},
+				"rtl": {
+					"all": "public/assets/styles/bootstrap/**/*-rtl.css"
 				}
 			},
 			"scripts": {

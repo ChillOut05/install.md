@@ -18,8 +18,20 @@
 			display: flex
 
 		&__call
-			padding: 4vw 7.5vw 4vw 6.25vw
+			display: flex
+			align-items: center
+			padding-left: 6.25vw
 			background-color: $main-color
+
+			&:hover
+				background-color: darken($main-color, 10%)
+				transition: 0.2s
+				cursor: pointer
+		
+		&__text-block
+			display: flex
+			flex-direction: column
+			padding-right: 7.5vw
 
 		&__text
 			font-size: 4.4vw
@@ -38,7 +50,6 @@
 				justify-content: center
 				width: 21.8vw
 				height: 21.8vw
-				background-color: $main-color
 
 			&
 				svg
@@ -54,7 +65,14 @@
 				height: 21.8vw
 				background-color: rgba($main-color, .6)
 
+				&:hover
+					background-color: darken($main-color, 10%)
+					transition: 0.2s
+
 			&
 				svg
 					width: 7.5vw
 					height: 5.9vw
+		
+		&__copyright
+			display: none

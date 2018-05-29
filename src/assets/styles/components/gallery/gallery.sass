@@ -4,17 +4,18 @@
 		align-items: center
 		justify-content: flex-end
 		position: relative
-		margin: -15.6vw 0 7vw
+		margin: -15.6vw 0 3vw
 		z-index: 2
 
 	&__info
-		margin-top: -10vw
-		margin-right: 4.9vw
+		position: absolute
+		top: 11vw
+		left: 10vw
 
 	&__heading
 		margin-bottom: 4.2vw
 		font-size: 1.6vw
-		color: #fff
+		color: #3a3427
 
 	&__caption-list
 		width: 12vw
@@ -24,6 +25,7 @@
 	&__caption
 		font-size: 1.25vw
 		outline: 0
+		color: #3a3427
 
 	&__slide-count
 		font-size: 1.25vw
@@ -34,6 +36,7 @@
 		width: 74vw
 
 	&__slide
+		max-height: 44vw
 		outline: 0
 
 	&__controls
@@ -65,5 +68,15 @@
 	&__slider-prev
 		background: #fff
 
+		&:hover svg
+			fill-opacity: 1
+			opacity: 1
+			transition: 0.2s
+
 	&__slider-next
-		background: $secondary-color
+		background: rgba($secondary-color, 0.8%)
+
+		&:hover
+			background: $secondary-color
+			transition: 0.2s
+			

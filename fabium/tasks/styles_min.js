@@ -8,7 +8,7 @@ var src = [
 var dest = globals.getPath( globals.config.paths.dist.styles.path )
 
 function stylesMin() {
-	return globals.gulp.src( src )
+	return globals.gulp.src( [globals.config.paths.dist.styles.all, '!' + globals.config.paths.dist.styles.minified.all] )
 		.pipe(
 			globals.$.plumber({
 				errorHandler: globals.consoleError
@@ -20,7 +20,7 @@ function stylesMin() {
 				path.basename += '.min';
 			})
 		)
-		.pipe( globals.gulp.dest( dest ) );
+		.pipe( globals.gulp.dest( globals.config.paths.dist.styles.path ) );
 };
 
 globals.gulp.task('styles:min', stylesMin);
